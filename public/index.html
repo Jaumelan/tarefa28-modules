@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa na Base de Dados</title>
+</head>
+<body>
+    <header>
+        <h1>Pesquise na Base de Dados</h1>
+    </header>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Escolha o mês para ver aniversariantes</legend>
+            <label for="birthMonth">Mês</label>
+            <input type="number" id="birthMonth" name="birthMonth" placeholder="número">
+            <button type="submit" formaction="/aniversariantes">Pesquisar</button>
+        </fieldset>
+        <fieldset>
+            <legend>Funcionarios por setor</legend>
+            <select name="sector" id="sector">
+                <option value="">Escolha uma opção</option>
+                <option value="produção">produção</option>
+                <option value="marqueting">marqueting</option>
+                <option value="hr">recursos humanos</option>
+            </select>
+            <button type="submit" formaction="/funcionarios">Pesquisar</button>
+        </fieldset>
+        <fieldset>
+            <legend>Ramais dos Funcionarios em ordem alfabética</legend>
+            <button type="submit" formaction="/ramais">Pesquisar</button>
+
+        </fieldset>
+
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
